@@ -54,7 +54,7 @@ func TestGetAPIKey(t *testing.T) {
 				return
 			}
 			if err != nil {
-				t.Errorf("GetAPIKey() unexpected error = %v", err)
+				t.Errorf("GetAPIKey() unexpected errors = %v", err)
 				return
 			}
 			if got != tt.want {
