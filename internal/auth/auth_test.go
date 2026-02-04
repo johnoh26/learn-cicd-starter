@@ -53,7 +53,7 @@ func TestGetAPIKey(t *testing.T) {
 				}
 				return
 			}
-			if err == nil {
+			if err != nil {
 				t.Errorf("GetAPIKey() unexpected error = %v", err)
 				return
 			}
